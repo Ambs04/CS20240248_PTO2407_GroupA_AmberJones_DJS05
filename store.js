@@ -2,3 +2,5 @@ import { createStore } from "https://cdnjs.cloudflare.com/ajax/libs/redux/5.0.1/
 import reducer from "./script.js";
 
 const store = createStore(reducer);
+
+export default store;
