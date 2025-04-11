@@ -15,12 +15,15 @@ import store from "./store.js";
 }
 
 export default function reducer(state = 0, action) {
-  if (action.type === "ADD") {
-    return state + 1;
-  } else if (action.type === "SUBTRACT") {
-    return state > 0 ? state - 1 : state;
-  } else if (action.type === "RESET") {
-    return (state = 0);
+  switch (action.type) {
+    case "ADD":
+      return state + 1;
+    case "SUBTRACT":
+      return state > 0 ? state - 1 : state;
+    case "RESET":
+      return (state = 0);
+    default:
+      return state;
   }
 }
 
