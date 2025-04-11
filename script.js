@@ -24,10 +24,16 @@ export default function reducer(state = 0, action) {
   }
 }
 
-store.dispatch({
-  type: "ADD",
+document.getElementById("increment-btn").addEventListener("click", function () {
+  store.dispatch({
+    type: "ADD",
+  });
+  document.querySelector("#view-tally p").textContent = store.getState();
 });
 
-store.dispatch({
-  type: "SUBTRACT",
+document.getElementById("decrement-btn").addEventListener("click", function () {
+  store.dispatch({
+    type: "SUBTRACT",
+  });
+  document.querySelector("#view-tally p").textContent = store.getState();
 });
