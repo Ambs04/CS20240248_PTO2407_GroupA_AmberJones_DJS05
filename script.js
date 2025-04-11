@@ -23,3 +23,11 @@ export default function reducer(state = 0, action) {
     return (state = 0);
   }
 }
+
+store.dispatch({
+  type: "ADD",
+});
+
+store.dispatch({
+  type: "SUBTRACT",
+});
