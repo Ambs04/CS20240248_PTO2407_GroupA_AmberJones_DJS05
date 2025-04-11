@@ -37,3 +37,10 @@ document.getElementById("decrement-btn").addEventListener("click", function () {
   });
   document.querySelector("#view-tally p").textContent = store.getState();
 });
+
+document.getElementById("reset-btn").addEventListener("click", function () {
+  store.dispatch({
+    type: "RESET",
+  });
+  document.querySelector("#view-tally p").textContent = store.getState();
+});

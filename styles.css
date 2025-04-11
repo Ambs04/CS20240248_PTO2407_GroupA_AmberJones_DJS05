@@ -40,3 +40,10 @@ p {
   height: 55px;
   width: 60px;
 }
+
+#reset-btn {
+  justify-content: end;
+  margin-bottom: 20px;
+  height: 55px;
+  width: 60px;
+}
