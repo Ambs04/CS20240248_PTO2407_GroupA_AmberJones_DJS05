@@ -1,0 +1,42 @@
+.tally {
+  width: 50%;
+  height: 75%;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 20% 25%;
+}
+
+#view-tally {
+  border: 1px, solid, black;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  align-content: center;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+}
+
+#increment-btn {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  justify-content: start;
+  height: 55px;
+  width: 60px;
+}
+
+#decrement-btn {
+  justify-content: end;
+  margin-bottom: 20px;
+  height: 55px;
+  width: 60px;
+}
