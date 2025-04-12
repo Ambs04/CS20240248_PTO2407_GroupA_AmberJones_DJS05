@@ -50,6 +50,11 @@ document.getElementById("reset-btn").addEventListener("click", function () {
   document.querySelector("#view-tally p").textContent = store.getState();
 });
 
+//subscriber
+const handler = store.subscribe(() => {
+  console.log(`Store has changed to: ${store.getState()}`);
+});
+
 //console tests
 
 // initial state: should output 0
@@ -57,15 +62,11 @@ console.log(store.getState());
 
 // addition twice: should output 2
 store.dispatch({ type: "ADD" });
-//console.log(store.getState());
 
 store.dispatch({ type: "ADD" });
-console.log(store.getState());
 
 //subtraction : should output 1
 store.dispatch({ type: "SUBTRACT" });
-console.log(store.getState());
 
 //reset to initial state: should output 0
 store.dispatch({ type: "RESET" });
-console.log(store.getState());
