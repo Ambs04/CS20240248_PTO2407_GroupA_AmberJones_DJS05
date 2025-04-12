@@ -14,6 +14,7 @@ import store from "./store.js";
   type: "RESET";
 }
 
+//reducer function with switch case to handle different action types
 export default function reducer(state = 0, action) {
   switch (action.type) {
     case "ADD":
@@ -27,6 +28,7 @@ export default function reducer(state = 0, action) {
   }
 }
 
+//event listeners for the buttons in the UI which dispacth the actions
 document.getElementById("increment-btn").addEventListener("click", function () {
   store.dispatch({
     type: "ADD",
