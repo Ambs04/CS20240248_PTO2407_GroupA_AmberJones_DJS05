@@ -50,7 +50,7 @@ document.getElementById("reset-btn").addEventListener("click", function () {
   document.querySelector("#view-tally p").textContent = store.getState();
 });
 
-//subscriber
+//subscriber to notify console when state has been changed and waht to.
 const handler = store.subscribe(() => {
   console.log(`Store has changed to: ${store.getState()}`);
 });
